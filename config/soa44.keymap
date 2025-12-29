@@ -81,17 +81,17 @@
         default {
             bindings = <
 &kp ESCAPE           &kp Q                &kp W         &kp E  &kp R           &kp T             &kp Y      &kp U        &kp I      &kp O       &kp P        &kp MINUS
-&mo 4                &kp A                &kp S         &kp D  &kp F           &kp G             &kp H      &kp J        &kp K      &kp L       &kp SEMI     &mo 4
-&kp INTERNATIONAL_5  &kp Z                &kp X         &kp C  &kp V           &kp B             &kp N      &kp M        &kp COMMA  &kp PERIOD  &kp SLASH    &kp INTERNATIONAL_4
+&kp INTERNATIONAL_5  &kp A                &kp S         &kp D  &kp F           &kp G             &kp H      &kp J        &kp K      &kp L       &kp SEMI     &kp INTERNATIONAL_4
+&mo 4                &kp Z                &kp X         &kp C  &kp V           &kp B             &kp N      &kp M        &kp COMMA  &kp PERIOD  &kp SLASH    &mo 4
                      &mt LEFT_ALT ESCAPE  &kp LEFT_WIN  &mo 3  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &lt 2 TAB  &lt 3 SPACE                         &lt 1 ENTER
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans         &mo 5      &mkp RCLK  &trans  &kp LG(LEFT_ARROW)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans              &mkp LCLK      &mkp MCLK  &trans     &trans  &kp LG(RIGHT)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans         &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans         &mo 5      &mkp RCLK  &kp LC(LG(LEFT_ARROW))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans              &mkp LCLK      &mkp MCLK  &trans     &kp LC(LG(RIGHT))       &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans         &trans     &trans     &trans                  &trans
         &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)                        &trans
             >;
         };
